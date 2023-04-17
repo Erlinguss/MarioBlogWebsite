@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
+    <div class="">
+        
+        
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
@@ -16,9 +18,15 @@
         </div>
     </div>
 
+    <div style="display: flex;">
+        <img src="{{ asset('images/mariotunel.jpeg') }}" alt="" style="flex: 1; margin-right: 10px;">
+        <img src="{{ asset('images/mariotunel1.jpeg') }}" alt="" style="flex: 1; margin-left: 10px;">
+    </div>
+    
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
             <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
+        
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
@@ -94,7 +102,7 @@
             </div>
         </div>
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+            {{-- <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt=""> --}}
         </div>
     </div>
 @endsection
