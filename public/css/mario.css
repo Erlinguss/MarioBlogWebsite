@@ -16,6 +16,7 @@
       /* transition: opacity 0.2s ease-in-out; */
       transition: transform 0.5s;
       padding: 10px; 
+      flex-direction: row-reverse;
 
 }
 
@@ -24,3 +25,34 @@
     transform: scale(1.2);
   }
 
+
+
+
+  /* .image-container {
+    position: relative;
+  } */
+  
+  /* .marioTunelImages {
+    display: none;
+    width: 100%;
+  }
+   */
+  .marioTunelImages:first-child {
+    display: block;
+  }
+  
+  #prev-btn,
+  #next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  #prev-btn {
+    left: 0;
+  }
+  
+  #next-btn {
+    right: 0;
+  }

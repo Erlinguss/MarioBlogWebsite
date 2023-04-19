@@ -1,6 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
+
+<script>
+    const images = document.querySelectorAll('.marioTunelImages');
+    let currentIndex = 0;
+    
+    document.querySelector('#prev-btn').addEventListener('click', () => {
+      images[currentIndex].style.display = 'none';
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      images[currentIndex].style.display = 'block';
+    });
+    
+    document.querySelector('#next-btn').addEventListener('click', () => {
+      images[currentIndex].style.display = 'none';
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].style.display = 'block';
+    });
+  </script>
+
+
+
+
     <div class="">
         
         <div class="flex text-gray-100 pt-10">
@@ -19,19 +40,22 @@
 
     <img src="{{ asset('images/mariobros.jpg') }}" alt="" style="flex: 1; margin: auto; width: 400px; height: 350px;">
 
-   <div style="display: flex;">
-    <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt=""    >
-
-    <img class=" marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="" >
-    <img class=" marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="" >
-    <img class=" marioTunelImages" src="{{ asset('images/mari64o.jpg') }}" alt="" >
-    <img class=" marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="" >
-    <img class=" marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
-
-    <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="" >
-
-
-</div>
+    <div style="display: flex;">
+        <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
+        
+        
+            <button id="prev-btn">Previous</button>
+            <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
+            <img class="marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="">
+            <img class="marioTunelImages" src="{{ asset('images/mari64o.jpg') }}" alt="">
+            <img class="marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="">
+            <img class="marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
+           
+            <button id="next-btn">Next</button>
+        
+        <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
+   
+    </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
