@@ -18,10 +18,20 @@
         </div>
     </div>
 
+    <img src="{{ asset('images/mariobros.jpg') }}" alt="" style="flex: 1; margin: auto; width: 400px; height: 350px;">
+
    <div style="display: flex;">
-    <img src="{{ asset('images/mariotunel.jpeg') }}" alt="" style="flex: 1; margin-right: 10px; width: 100px; height: 350px;">
-    <img src="{{ asset('images/mariobros.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 350px;">
-    <img src="{{ asset('images/mariotunel1.jpeg') }}" alt="" style="flex: 1; margin-left: 10px; width: 100px; height: 350px;">
+    <img src="{{ asset('images/mariotunel.jpeg') }}" alt="" style="flex: 1; margin-right: 10px; width: 200px; height: 200px;">
+               
+    <img src="{{ asset('images/supermario.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
+    <img src="{{ asset('images/marioworld.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
+    <img src="{{ asset('images/mari64o.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
+    <img src="{{ asset('images/mariogalaxy.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
+    <img src="{{ asset('images/supermarioodyssey.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
+   
+    <img src="{{ asset('images/mariotunel1.jpeg') }}" alt="" style="flex: 1; margin-left: 10px; width: 200px; height: 200px;">
+
+
 </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
