@@ -1,0 +1,26 @@
+.tunnel{
+
+    flex: 1;
+     margin-left: 10px;
+      width: 200px; 
+      height: 200px;
+}
+
+
+.marioTunelImages{
+    display: flex;
+    flex: 1;
+     margin: auto;
+      width: 500px; 
+      height: 150px; 
+      /* transition: opacity 0.2s ease-in-out; */
+      transition: transform 0.5s;
+      padding: 10px; 
+
+}
+
+ .marioTunelImages:hover {
+    /* opacity: 0.5; */
+    transform: scale(1.2);
+  }
+

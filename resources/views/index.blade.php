@@ -3,7 +3,6 @@
 @section('content')
     <div class="">
         
-        
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
@@ -21,15 +20,15 @@
     <img src="{{ asset('images/mariobros.jpg') }}" alt="" style="flex: 1; margin: auto; width: 400px; height: 350px;">
 
    <div style="display: flex;">
-    <img src="{{ asset('images/mariotunel.jpeg') }}" alt="" style="flex: 1; margin-right: 10px; width: 200px; height: 200px;">
-               
-    <img src="{{ asset('images/supermario.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
-    <img src="{{ asset('images/marioworld.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
-    <img src="{{ asset('images/mari64o.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
-    <img src="{{ asset('images/mariogalaxy.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
-    <img src="{{ asset('images/supermarioodyssey.jpg') }}" alt="" style="flex: 1; margin: auto; width: 130px; height: 150px;">
-   
-    <img src="{{ asset('images/mariotunel1.jpeg') }}" alt="" style="flex: 1; margin-left: 10px; width: 200px; height: 200px;">
+    <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="" >
+
+    <img class=" marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="" >
+    <img class=" marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="" >
+    <img class=" marioTunelImages" src="{{ asset('images/mari64o.jpg') }}" alt="" >
+    <img class=" marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="" >
+    <img class=" marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
+
+    <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="" >
 
 
 </div>
