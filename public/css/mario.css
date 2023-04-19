@@ -1,51 +1,39 @@
 .tunnel{
 
-    flex: 1;
+     flex: flex; 
+     flex-wrap: nowrap;
      margin-left: 10px;
       width: 200px; 
       height: 200px;
+      object-fit: cover;
 }
 
 
+
 .marioTunelImages{
-    display: flex;
-    flex: 1;
-     margin: auto;
-      width: 500px; 
-      height: 150px; 
-      /* transition: opacity 0.2s ease-in-out; */
+      /* flex: block; */
+      margin: auto;
+      max-width: 600px; 
+      max-height: 200px; 
       transition: transform 0.5s;
       padding: 10px; 
-      flex-direction: row-reverse;
+      object-fit: cover;
+      /* flex-direction: row-reverse; */
 
 }
 
  .marioTunelImages:hover {
-    /* opacity: 0.5; */
+   
     transform: scale(1.2);
   }
 
 
+/* =========NEXT AND PREVIOUS BUTTON =========== */
 
-
-  /* .image-container {
-    position: relative;
-  } */
-  
-  /* .marioTunelImages {
-    display: none;
-    width: 100%;
-  }
-   */
-  .marioTunelImages:first-child {
-    display: block;
-  }
-  
-  #prev-btn,
+#prev-btn,
   #next-btn {
-    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     z-index: 1;
   }
   
@@ -56,3 +44,73 @@
   #next-btn {
     right: 0;
   }
+
+
+  /* =============PREVIOUS BUTTON ============ */
+  .navBtn {
+    background-color: #dd3608;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .navBtn:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .navBtn:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .navBtn:hover {
+    background-color: #0511b8;
+  }
+  
+  .navBtn:hover {
+    background-color: #0511b8;
+  }
+
+/* ===============NEXT BUTTON =============== */
+
+  .navBtn1 {
+    background-color: #dd3608;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .navBtn1:first-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .navBtn1:last-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .navBtn1:hover {
+    background-color: #0511b8;
+  }
+
+  
