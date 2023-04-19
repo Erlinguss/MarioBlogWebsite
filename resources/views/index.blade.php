@@ -41,9 +41,10 @@
                 <img class="marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
                 <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
               </div>
-              <button id="next-btn" class="navBtn"><strong>&gt;</strong></button>
+              <button id="next-btn" class="navBtn1"><strong>&gt;</strong></button>
+              <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
             </div>
-            <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
+            
           </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
