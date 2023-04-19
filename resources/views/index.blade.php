@@ -20,7 +20,7 @@
     <img src="{{ asset('images/mariobros.jpg') }}" alt="" style="flex: 1; margin: auto; width: 400px; height: 350px;">
 
    <div style="display: flex;">
-    <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="" >
+    <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt=""  >
 
     <img class=" marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="" >
     <img class=" marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="" >
