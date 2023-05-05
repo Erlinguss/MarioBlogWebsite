@@ -19,25 +19,26 @@
         </div>
     </div>
 
-    <img src="{{ asset('images/mariobros.jpg') }}" alt="" style="flex: 1; margin: auto; width: 400px; height: 350px;">
+    <img class="marioflor" src="{{ asset('images/mariobros.jpg') }}" alt="">
 
         <div class="wrapper">
+            <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
+            <button id="prev-btn" class="navBtn"><strong>&lt;</strong></button>
+
             <div class="container">
-              <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
-              <button id="prev-btn" class="navBtn"><strong>&lt;</strong></button>
               <div class="images" style="display: flex; flex-direction: row; ">
                 <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
                 <img class="marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="">
                 <img class="marioTunelImages" src="{{ asset('images/mari64o.jpg') }}" alt="">
                 <img class="marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="">
                 <img class="marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
-              </div>
-              <button id="next-btn" class="navBtn1"><strong>&gt;</strong></button>
-              <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
+                <img class="marioTunelImages" src="{{ asset('images/mario3D.jpg') }}" alt="">
+               
             </div>
+            </div>
+
+            <button id="next-btn" class="navBtn1"><strong>&gt;</strong></button>
+            <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
           </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
