@@ -3,9 +3,6 @@
 @section('content')
 
 
-
-
-
     <div class="">
         
         <div class="flex text-gray-100 pt-10">
@@ -24,12 +21,9 @@
 
     <img src="{{ asset('images/mariobros.jpg') }}" alt="" style="flex: 1; margin: auto; width: 400px; height: 350px;">
 
-   
-
         <div class="wrapper">
             <div class="container">
               <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
-          
               <button id="prev-btn" class="navBtn"><strong>&lt;</strong></button>
               <div class="images" style="display: flex; flex-direction: row; ">
                 <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
@@ -44,7 +38,6 @@
               <button id="next-btn" class="navBtn1"><strong>&gt;</strong></button>
               <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
             </div>
-            
           </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
