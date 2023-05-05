@@ -80,41 +80,37 @@
 </head>
 <body class="bg-white-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-red-700 py-4 sm:py-6">
+
+        <header class="bg-red-700 py-2 sm:py-4">
             <div class="container mx-auto flex items-center justify-between px-6 flex-col sm:flex-row">
-                <a href="{{ url('/') }}" class="flex items-center text-lg font-bold text-white">
-                     <img  src="{{ asset('images/nintend.png') }}" alt="Mario Logo" class="w-40 h-40 mr-2">
-                
-                </a>
-                <nav class="flex space-x-6 sm:space-x-8 text-white text-sm sm:text-base">
-                    @guest
-                        <a class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        @if (Route::has('register'))
-                            <a class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        @endif
-                    @else
-                        <span class="transition duration-300 ease-in-out transform hover:-translate-y-1">{{ Auth::user()->name }}</span>
-
-                        <a href="{{ route('logout') }}"
-                           class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1"
-                           onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-                            {{ csrf_field() }}
-                        </form>
-                    @endguest
-                </nav>
+              <a href="{{ url('/') }}" class="flex items-center text-lg font-bold text-white">
+                <img src="{{ asset('images/nintend.png') }}" alt="Mario Logo" class="w-35 h-16 mr-2">
+              </a>
+              <nav class="flex space-x-6 sm:space-x-8 text-white text-base sm:text-lg">
+                @guest
+                <a class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" href="{{ route('login') }}"><strong> {{ __('Login') }} </strong></a>
+                @if (Route::has('register'))
+                <a class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" href="{{ route('register') }}"><strong> {{ __('Register') }} </strong></a>
+                @endif
+                @else
+                <span class="transition duration-300 ease-in-out transform hover:-translate-y-1">{{ Auth::user()->name }}</span>
+                <a href="{{ route('logout') }}" class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                  {{ csrf_field() }}
+                </form>
+                @endguest
+              </nav>
             </div>
-        </header>
-
-        <header class="bg-gray-900 py-6" style="background-image: url('{{ asset('images/mario5.jpg') }}'); background-size: cover; background-position: center;">
+          </header>
+          
+          <header class="bg-gray-900 py-6" style="background-image: url('{{ asset('images/mario5.jpg') }}'); background-size: cover; background-position: center;">
             <div class="container mx-auto flex flex-col items-center justify-center px-6">
-                <nav class="flex mt-6">
-                    <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/">Home</a>
-                    <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/blog">Blog</a>
-                </nav>
+              <nav class="flex mt-6">
+                <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/"><strong>Home </strong></a>
+                <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/blog"> <strong>Blog </strong></a>
+              </nav>
             </div>
-        </header>
+          </header>
 
         <div class="container mx-auto px-4 py-8">
             @yield('content')
