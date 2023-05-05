@@ -85,7 +85,8 @@
         <header class="bg-red-700 py-2">
             <div class="container mx-auto flex items-center justify-between px-6">
                 <a href="{{ url('/') }}" class="flex items-center text-lg font-bold text-white">
-                    <img src="https://i.imgur.com/gvZbl4H.png" alt="Mario Logo" class="w-10 h-10 mr-2">
+                    <img  src="{{ asset('images/nintend.png') }}"alt="Mario Logo" class="w-40 h-40 mr-2">
+                
                     <span>{{ config('app.name', 'Laravel') }}</span>
                 </a>
                 <nav class="flex space-x-4 text-white text-sm sm:text-base">
