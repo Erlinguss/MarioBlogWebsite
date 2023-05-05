@@ -61,8 +61,6 @@
 </html> --}}
 
 
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,18 +78,15 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ ('css/mario.css') }}" rel="stylesheet">
 </head>
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+<body class="bg-white-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-red-700 py-2">
-            <div class="container mx-auto flex items-center justify-between px-6">
+        <header class="bg-red-700 py-4 sm:py-6">
+            <div class="container mx-auto flex items-center justify-between px-6 flex-col sm:flex-row">
                 <a href="{{ url('/') }}" class="flex items-center text-lg font-bold text-white">
-                    <img  src="{{ asset('images/nintend.png') }}"alt="Mario Logo" class="w-40 h-40 mr-2">
+                     <img  src="{{ asset('images/nintend.png') }}"alt="Mario Logo" class="w-40 h-40 mr-2">
                 
-                    <span>{{ config('app.name', 'Laravel') }}</span>
                 </a>
-                <nav class="flex space-x-4 text-white text-sm sm:text-base">
-                    <a class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" href="/">Home</a>
-                    <a class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" href="/blog">Blog</a>
+                <nav class="flex space-x-6 sm:space-x-8 text-white text-sm sm:text-base">
                     @guest
                         <a class="no-underline hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
@@ -112,13 +107,23 @@
             </div>
         </header>
 
-        <div>
+        <header class="bg-gray-900 py-6" style="background-image: url('path/to/image.jpg'); background-size: cover; background-position: center;">
+            <div class="container mx-auto flex flex-col items-center justify-center px-6">
+              <nav class="flex mt-6">
+                <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/">Home</a>
+                <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/blog">Blog</a>
+              </nav>
+            </div>
+          </header>
+
+        <div class="container mx-auto px-4 py-8">
             @yield('content')
         </div>
 
-        <div>
+        <div class="bg-gray-700 py-8">
             @include('layouts.footer')
         </div>
     </div>
 </body>
 </html>
+
