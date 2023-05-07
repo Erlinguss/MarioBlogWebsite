@@ -38,10 +38,24 @@
               <div class="year">1996</div>
               <img class="marioTunelImages" src="{{ asset('images/mari64o.jpg') }}" alt="">
             </div>
+
+            <div class="image-container">
+                <div class="year">2002</div>
+                <img class="marioTunelImages" src="{{ asset('images/mario9.jpg') }}" alt="">
+              </div>
+              <div class="image-container">
+                <div class="year">2006</div>
+                <img class="marioTunelImages" src="{{ asset('images/mario10.jpg') }}" alt="">
+              </div>
+              
             <div class="image-container">
               <div class="year">2007</div>
               <img class="marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="">
             </div>
+            <div class="image-container">
+                <div class="year">2011</div>
+                <img class="marioTunelImages" src="{{ asset('images/mario11.jpg') }}" alt="">
+              </div>
             <div class="image-container">
               <div class="year">2017</div>
               <img class="marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">

@@ -1,4 +1,6 @@
 
+
+/* ========= IMAGES SLICES =========== */
 .wrapper {
   display: flex;
   align-items: center;
@@ -15,36 +17,36 @@
 }
 
 .images {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  position: relative;
-  width: fit-content;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
+  width: fit-content;
 }
 
 .image-container {
-  width: 240px;
+  width: 245px;
   height: 240px;
-  margin-right: 11px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+
 }
-
-
 
 .marioTunelImages {
+  margin-top: 10px;
   width: 200px;
   height: 200px;
-  border-radius: 10px; /* add a border radius */
-  border: 2px solid black; /* add a border */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* add a shadow */
+  border-radius: 10px;
+  border: 2px solid black; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
 }
 
-
 .year {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
@@ -52,20 +54,16 @@
 
 .marioTunelImages:hover,
 .year:hover {
-  transform: scale(1.2);
- 
+  transform: scale(1.2); 
 }
 
-
-  .marioflor{
-    flex: 1;
-     margin: auto;
-      width: 400px; 
-      height: 350px;
-      margin-bottom: 50px;
-
-  }
-
+.marioflor {
+  flex: 1;
+  margin: auto;
+  width: 400px; 
+  height: 350px;
+  margin-bottom: 50px;
+}
 
 
 /* =========NEXT AND PREVIOUS BUTTON =========== */
