@@ -1,39 +1,62 @@
 
-  .marioTunelImages:hover {
-    transform: scale(1.2);
-  }
-  
-  .wrapper {
-    display: flex;
-    align-items: center;
-  }
-  
-  .tunnel {
-    width: 200px;
-    height: 200px;
-  }
-  
-  .container {
-    overflow: hidden;
-  }
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
 
-  
-  
-  .images {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  
-    
-  }
-  
-  .images img {
-    width: 200px;
-    height: 200px;
-    margin: 30px;
-  }
-  
+.tunnel {
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.image-container {
+  width: 240px;
+  height: 240px;
+  margin-right: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.marioTunelImages {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px; /* add a border radius */
+  border: 2px solid black; /* add a border */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* add a shadow */
+}
+
+
+.year {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.marioTunelImages:hover,
+.year:hover {
+  transform: scale(1.2);
  
+}
+
+
   .marioflor{
     flex: 1;
      margin: auto;
@@ -42,6 +65,7 @@
       margin-bottom: 50px;
 
   }
+
 
 
 /* =========NEXT AND PREVIOUS BUTTON =========== */

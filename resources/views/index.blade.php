@@ -21,25 +21,41 @@
 
     <img class="marioflor" src="{{ asset('images/mariobros.jpg') }}" alt="">
 
-        <div class="wrapper">
-            <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
-            <button id="prev-btn" class="navBtn"><strong>&lt;</strong></button>
-
-            <div class="container">
-              <div class="images" style="display: flex; flex-direction: row; ">
-                <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/mari64o.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
-                <img class="marioTunelImages" src="{{ asset('images/mario3D.jpg') }}" alt="">
-               
+    <div class="wrapper">
+        <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
+        <button id="prev-btn" class="navBtn"><strong>&lt;</strong></button>
+        <div class="container">
+          <div class="images" style="display: flex; flex-direction: row;">
+            <div class="image-container">
+              <div class="year">1985</div>
+              <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
             </div>
+            <div class="image-container">
+              <div class="year">1990</div>
+              <img class="marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="">
             </div>
-
-            <button id="next-btn" class="navBtn1"><strong>&gt;</strong></button>
-            <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
+            <div class="image-container">
+              <div class="year">1996</div>
+              <img class="marioTunelImages" src="{{ asset('images/mari64o.jpg') }}" alt="">
+            </div>
+            <div class="image-container">
+              <div class="year">2007</div>
+              <img class="marioTunelImages" src="{{ asset('images/mariogalaxy.jpg') }}" alt="">
+            </div>
+            <div class="image-container">
+              <div class="year">2017</div>
+              <img class="marioTunelImages" src="{{ asset('images/supermarioodyssey.jpg') }}" alt="">
+            </div>
+            <div class="image-container" style="margin-right: 0;">
+              <div class="year">2021</div>
+              <img class="marioTunelImages" src="{{ asset('images/mario3D.jpg') }}" alt="">
+            </div>
           </div>
+        </div>
+        <button id="next-btn" class="navBtn1"><strong>&gt;</strong></button>
+        <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
+  </div>
+
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
