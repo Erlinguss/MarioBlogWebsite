@@ -152,7 +152,7 @@
             @yield('content')
         </div>
 
-        <div class="bg-gray-700 py-8">
+        <div >
             @include('layouts.footer')
         </div>
     </div>

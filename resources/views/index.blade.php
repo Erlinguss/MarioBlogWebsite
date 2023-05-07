@@ -19,7 +19,12 @@
         </div>
     </div>
 
+
+
     <img class="marioflor" src="{{ asset('images/mariobros.jpg') }}" alt="">
+    <img class="" src="{{ asset('images/backgroundMario3.png') }}" alt="">
+    <img class="" src="{{ asset('images/backgroundMario2.png') }}" alt="">
+   
 
     <div class="wrapper">
         <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
@@ -70,6 +75,10 @@
         <img class="tunnel" src="{{ asset('images/mariotunel1.jpeg') }}" alt="">
   </div>
 
+  <img class="" src="{{ asset('images/backgroundMario6.png') }}" alt="">
+  <img class="" src="{{ asset('images/backgroundMario.png') }}" alt="">
+
+  
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
