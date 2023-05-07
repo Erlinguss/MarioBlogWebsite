@@ -19,12 +19,30 @@
         </div>
     </div>
 
-
-
-    <img class="marioflor" src="{{ asset('images/mariobros.jpg') }}" alt="">
+    {{-- <img class="marioflor" src="{{ asset('images/mariobros.jpg') }}" alt="">
     <img class="" src="{{ asset('images/backgroundMario3.png') }}" alt="">
-    <img class="" src="{{ asset('images/backgroundMario2.png') }}" alt="">
-   
+    <img class="" src="{{ asset('images/backgroundMario2.png') }}" alt=""> --}}
+
+    {{-- <img class="marioflor" src="{{ asset('images/mariobros.jpg') }}" alt=""> --}}
+
+    <div class="flex justify-center items-center">
+        <img class="w-1/2 mr-4" src="{{ asset('images/mariobros.jpg') }}" alt="">
+        <div>
+          <h2><strong>Official Home of Mario</strong></h2>
+          <p>Mario If you’re a Mario fan—or even if you’ve just found out about him today—you’ve come to the right place! Learn everything there is to know about that multitalented, mustached marvel, and check out the latest news, videos, and more.</p>
+        </div>
+      </div>
+
+
+    <div class="relative">
+        <img class="" src="{{ asset('images/backgroundMario3.png') }}" alt="">
+        <figcaption class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold font-serif pt-20">
+            The history of Super Mario
+        </figcaption>
+        <img class="" src="{{ asset('images/backgroundMario2.png') }}" alt="">
+    </div>
+
+
 
     <div class="wrapper">
         <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
