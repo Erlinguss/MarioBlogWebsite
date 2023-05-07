@@ -24,23 +24,26 @@
 
 
 
-  // set the initial position of the second header
-var secondHeader = document.querySelector(".second-header");
-secondHeader.classList.add("absolute");
+//   // set the initial position of the second header
+// var secondHeader = document.querySelector(".second-header");
+// secondHeader.classList.add("absolute");
 
-// wait for the page to load
-window.addEventListener("load", function() {
-  // remove the absolute positioning
-  secondHeader.classList.remove("absolute");
+// // wait for the page to load
+// window.addEventListener("load", function() {
+//   // remove the absolute positioning
+//   secondHeader.classList.remove("absolute");
 
-  // scroll event listener
-  window.addEventListener("scroll", function() {
-    var scrollPosition = window.pageYOffset;
+//   // scroll event listener
+//   window.addEventListener("scroll", function() {
+//     var scrollPosition = window.pageYOffset;
 
-    if (scrollPosition > 0) {
-      secondHeader.classList.add("fixed");
-    } else {
-      secondHeader.classList.remove("fixed");
-    }
-  });
-});
+//     if (scrollPosition > 0) {
+//       secondHeader.classList.add("fixed");
+//     } else {
+//       secondHeader.classList.remove("fixed");
+//     }
+//   });
+// });
+
+
+
