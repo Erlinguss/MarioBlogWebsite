@@ -148,9 +148,12 @@
 
         
 
-        <div class="container mx-auto px-4 py-8 mt-24">
+        {{-- <div class="container mx-auto px-4 py-8 mt-24">
             @yield('content')
-        </div>
+        </div> --}}
+        <div class="container mx-auto px-0 py-8 mt-24">
+          @yield('content')
+      </div>
 
         <div >
             @include('layouts.footer')
