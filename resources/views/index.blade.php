@@ -7,24 +7,25 @@
   
 <div class="grid grid-cols-2 gap-4 pt-20">
     <div class="flex items-center justify-center">
-      <img src="{{ asset('images/mariobros.jpg') }}" alt="Mario Bros.">
+        <img src="{{ asset('images/mariobros.jpg') }}" alt="Mario Bros.">
     </div>
     <div class="flex flex-col justify-center">
-      <h2 class="text-4xl font-bold mb-4">Official Home of Mario</h2>
-      <p class="text-lg leading-7">
-        Mario If you’re a Mario fan—or even if you’ve just found out about him today you’ve come to the right place! Learn everything there is to know about that multitalented, mustached marvel, and check out the latest news, videos, and more.
-      </p>
+        <h2 class="text-4xl font-bold mb-4">Official Home of Mario</h2>
+        <p class="text-lg leading-7">
+            Mario If you’re a Mario fan—or even if you’ve just found out about him today you’ve come to the right place! Learn everything there is to know about that multitalented, mustached marvel, and check out the latest news, videos, and more.
+        </p>
+        
     </div>
-    <div class="scroll-image-wrapper" style="float: right;">
-      <img id="scroll-image" src="{{ asset('images/mariofly.png') }}" alt="">
+</div>
+<div class="flex justify-end">
+    <div class="scroll-image-wrapper">
+        <img id="scroll-image" src="{{ asset('images/mariofly.png') }}" alt="">
     </div>
-  </div>
-  
-  <a href="/blog" class="mt-8 inline-flex bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 text-sm ml-80">
+</div>
+<a href="/blog" class="mt-8 inline-flex bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 text-sm ml-80">
     Read More
   </a>
 
-  
     <div class="relative">
         <img class="" src="{{ asset('images/backgroundMario3.png') }}" alt="">
         <figcaption class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold font-serif pt-20">
@@ -85,7 +86,9 @@
   </div>
 
   <img class="" src="{{ asset('images/backgroundMario6.png') }}" alt="">
+  
   <img class="" src="{{ asset('images/backgroundMario.png') }}" alt="">
+  
 
   
 
