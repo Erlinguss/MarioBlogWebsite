@@ -1,25 +1,4 @@
 
-// // slices images 
-//   const images = document.querySelector('.images');
-//   const prevBtn = document.querySelector('#prev-btn'); 
-//   const nextBtn = document.querySelector('#next-btn');
-//   const imageWidth = images.children[0].clientWidth;
-//   let currentIndex = 1; 
-
-//   function moveToIndex(index) {
-//     images.style.transform = `translateX(-${index * imageWidth}px)`;
-//     currentIndex = index;
-//   }
-
-//   prevBtn.addEventListener('click', () => {
-//     const index = (currentIndex - 1 + images.children.length) % images.children.length;
-//     moveToIndex(index);
-//   });
-
-//   nextBtn.addEventListener('click', () => {
-//     const index = (currentIndex + 1) % images.children.length;
-//     moveToIndex(index);
-//   });
 
 const images = document.querySelector('.images');
 const prevBtn = document.querySelector('#prev-btn'); 
@@ -67,4 +46,14 @@ nextBtn.addEventListener('click', () => {
 // });
 
 
+function toggleImg() {
+  console.log("toggleImg function called");
+  const imgScroll = document.querySelector(".scroll-image-wrapper");
+  if (window.scrollY > 0) {
+    imgScroll.classList.add("show");
+  } else {
+    imgScroll.classList.remove("show");
+  }
+}
 
+window.addEventListener("scroll", toggleImg);
