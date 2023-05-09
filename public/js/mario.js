@@ -1,4 +1,5 @@
 
+// =========FUNCTION TO MOVE IMAGES FROM -X TO X OR VICEVERSE ==========
 
 const images = document.querySelector('.images');
 const prevBtn = document.querySelector('#prev-btn'); 
@@ -46,6 +47,8 @@ nextBtn.addEventListener('click', () => {
 // });
 
 
+// ===============FUNCTION TO SHOW AN IMAGE WHEN SCROLL DOWN ===============
+
 function toggleImg() {
   console.log("toggleImg function called");
   const imgScroll = document.querySelector(".scroll-image-wrapper");
@@ -57,3 +60,19 @@ function toggleImg() {
 }
 
 window.addEventListener("scroll", toggleImg);
+
+
+// ===============SHOW AND HIDE IMAGE AND TEXT WHEN CLICK=================
+
+
+var marioImage = document.getElementById("mario-image");
+var marioTextImage = document.getElementById("mario-text-image");
+var marioText = document.getElementById("mario-text");
+
+marioImage.addEventListener("click", function() {
+  marioTextImage.style.display = marioTextImage.style.display === "none" ? "block" : "none";
+  marioText.style.display = marioText.style.display === "none" ? "block" : "none";
+});
+
+
+

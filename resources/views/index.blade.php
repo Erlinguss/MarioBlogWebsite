@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
   
 <div class="grid grid-cols-2 gap-4 pt-20">
     <div class="flex items-center justify-center">
@@ -41,10 +39,12 @@
         <button id="prev-btn" class="navBtn"><strong>&lt;</strong></button>
         <div class="container">
           <div class="images" style="display: flex; flex-direction: row;">
+            
             <div class="image-container">
               <div class="year">1985</div>
-              <img class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
+              <img  id="mario-image" class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
             </div>
+
             <div class="image-container">
               <div class="year">1990</div>
               <img class="marioTunelImages" src="{{ asset('images/marioworld.jpg') }}" alt="">
@@ -87,10 +87,26 @@
 
   <img class="" src="{{ asset('images/backgroundMario6.png') }}" alt="">
   
+
+
+<div class="flex items-center justify-center">
+  
+  <img id="mario-text-image" src="{{ asset('images/s1.jpg') }}" class="w-1/4 h-auto pr-8 hidden">
+
+  <a id="mario-text" class="text-lg leading-7 text-justify hidden pt-20 px-15">
+    <strong>Super Mario bros Story (from the original instruction booklet)</strong>
+   <br><br>
+    One day the kingdom of the peaceful mushroom people was invaded by the Koopa, a tribe of turtles famous for their black magic. The quiet, peace-loving Mushroom People were turned into mere stones, bricks and even field horsehair plants, and the Mushroom Kingdom fell into ruin.
+    <br><br>
+    The only one who can undo the magic spell on the Mushroom People and return them to their normal selves is the Princess Toadstool, the daughter of the Mushroom King. Unfortunately, she is presently in the hands of Bowser, the King of the Koopa.
+    <br><br>
+    Mario hears about the Mushroom People’s plight and sets out on a quest to free the Mushroom Princess from the evil Koopa and restore the fallen kingdom of the Mushroom People.
+    <br><br>
+    You are Mario! It’s up to you to save the Mushroom People from the black magic of the Koopa!
+  </a>
+</div>
   <img class="" src="{{ asset('images/backgroundMario.png') }}" alt="">
   
-
   
-
-   
+  
 @endsection
