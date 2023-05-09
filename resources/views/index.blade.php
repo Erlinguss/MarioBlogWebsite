@@ -42,7 +42,7 @@
             
             <div class="image-container">
               <div class="year">1985</div>
-              <img  id="mario-image" class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
+              <img  id="mario-image-9" class="marioTunelImages" src="{{ asset('images/supermario.jpg') }}" alt="">
             </div>
 
             <div class="image-container">
@@ -90,8 +90,8 @@
 
 
 <div class="flex items-center justify-center">
-  <img id="mario-text-image" src="{{ asset('images/s1.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
-  <a id="mario-text" class="text-lg leading-7 text-justify hidden pt-20 px-15">
+  <img id="mario-text-image-9" src="{{ asset('images/s1.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <a id="mario-text-9" class="text-lg leading-7 text-justify hidden pt-20 px-15">
     <strong>Super Mario bros. Story </strong>
    <br><br>
     One day the kingdom of the peaceful mushroom people was invaded by the Koopa, a tribe of turtles famous for their black magic. The quiet, peace-loving Mushroom People were turned into mere stones,

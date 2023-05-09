@@ -181,6 +181,7 @@
 } */
 
 
+/* ===============SCROLL IMAGE SHOW & HIDE =============== */
 
 .scroll-image-wrapper {
   display: none;
@@ -204,6 +205,8 @@
 }
 
 
+
+
 #mario-text-image, #mario-text-image-1 ,
 #mario-text-image-2, #mario-text-image-3,
 #mario-text-image-4, #mario-text-image-5,
@@ -213,7 +216,6 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
   object-fit: cover;
 }
-
 
 
 .background-container {
