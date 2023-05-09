@@ -72,7 +72,6 @@
 #prev-btn,
   #next-btn {
     top: 50%;
-    /* transform: translateY(-50%); */
     z-index: 1;
   }
   
@@ -183,23 +182,9 @@
 
 
 
-/* .img-scroll {
-  display: none;
-  max-width: 150px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-}
-
-#scroll-down.show-img .img-scroll {
-  display: block;
-} */
-
 .scroll-image-wrapper {
   display: none;
   max-width: 150px;
-  /* position: fixed; */
   bottom: 20px;
   right: 200px;
   z-index: 9999;
@@ -219,9 +204,19 @@
 }
 
 
-/* 
-#scroll-image {
-  width: 300px;
-  height: auto;
-} */
+#mario-text-image, #mario-text-image-1 ,
+#mario-text-image-2, #mario-text-image-3,
+#mario-text-image-4, #mario-text-image-5,
+#mario-text-image-6, #mario-text-image-7{
+  border-radius: 10px ;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+  object-fit: cover;
+}
+
+
+
+
+
+
+
 

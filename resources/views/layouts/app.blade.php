@@ -125,6 +125,6 @@
             @include('layouts.footer')
         </div>
     </div>
-</body>
+</body >
 </html>
 
