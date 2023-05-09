@@ -133,3 +133,21 @@ marioImage6.addEventListener("click", function() {
   marioTextImage6.style.display = marioTextImage6.style.display === "none" ? "block" : "none";
   marioText6.style.display = marioText6.style.display === "none" ? "block" : "none";
 });
+
+var marioImage7 = document.getElementById("mario-image-7");
+var marioTextImage7 = document.getElementById("mario-text-image-7");
+var marioText7 = document.getElementById("mario-text-7");
+
+marioImage7.addEventListener("click", function() {
+  marioTextImage7.style.display = marioTextImage7.style.display === "none" ? "block" : "none";
+  marioText7.style.display = marioText7.style.display === "none" ? "block" : "none";
+});
+
+var marioImage8 = document.getElementById("mario-image-8");
+var marioTextImage8 = document.getElementById("mario-text-image-8");
+var marioText8 = document.getElementById("mario-text-8");
+
+marioImage8.addEventListener("click", function() {
+  marioTextImage8.style.display = marioTextImage8.style.display === "none" ? "block" : "none";
+  marioText8.style.display = marioText8.style.display === "none" ? "block" : "none";
+});

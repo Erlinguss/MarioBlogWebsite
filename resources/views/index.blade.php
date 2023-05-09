@@ -162,9 +162,9 @@
 
 
 <div class="flex items-center justify-center">
-  <img id="mario-text-image-4" src="{{ asset('images/s4.jpeg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <img id="mario-text-image-4" src="{{ asset('images/s5.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
   <a id="mario-text-4" class="text-lg leading-7 text-justify hidden pt-20 px-15">
-    <strong>Super Mario SunShine. Story </strong>
+    <strong>New Super Mario Bros. Story </strong>
    <br><br>
    Emergency News Flash!
    <br><br>
@@ -178,10 +178,70 @@
 </div>
 
 
+<div class="flex items-center justify-center">
+  <img id="mario-text-image-5" src="{{ asset('images/s6.jpeg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <a id="mario-text-5" class="text-lg leading-7 text-justify hidden pt-20 px-15">
+    <strong>Super Mario Galaxy. Story </strong>
+   <br><br>
+  
+Every hundred years, a huge comet flies by in the skies above the Mushroom Kingdom. One year, that comet filled the entire sky, and from it fell a stream of shooting stars.
+The Toads scooped up the Star Bits and brought them to the castle, where they were reborn as a great Power Star. It was a happy time in the Mushroom Kingdom. Then one night Mario received a letter...
+<br><br>
+“Dear Mario,
+I’ll be waiting for you at the castle on the night of the Star Festival. There’s something I’d like to give you.
+from Peach”
+<br><br>
+With invitation in hand, Mario headed off to the castle just as the Star Festival was getting into full swing. Surrounded by Toads gleefully trying to catch falling Star Bits, Mario was looking forward to the night’s festivities. But then, something happened...
+
+</a>
+</div>
 
 
-  <img class="" src="{{ asset('images/backgroundMario.png') }}" alt="">
+<div class="flex items-center justify-center">
+  <img id="mario-text-image-6" src="{{ asset('images/s7.jpeg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <a id="mario-text-6" class="text-lg leading-7 text-justify hidden pt-20 px-15">
+    <strong>Super Mario 3D Land. Story </strong>
+   <br><br>
+   In the Mushroom Kingdom, there stands a mysterious tree. It has a branch in the shape of a tail and is known as the Tail Tree. One night, 
+   a fierce storm assails the Mushroom Kingdom. Worried for the Tail Tree, Princess Peach goes to check on it, but when morning arrives, she has yet to return.
+   Accompanied by Toads, Mario rushes to the Tail Tree only to find its leaves are gone. All that remains is the bare Tail Tree and an envelope.
+   <br><br>
+   Inside the envelope, they find a photograph of Princess Peach in Bowser’s grasp! The Toads are beside themselves. 
+   Bowser is up to his dirty deeds again, so Mario rushes off to rescue Princess Peach!
+</a>
+</div>
+
+
+<div class="flex items-center justify-center">
+  <img id="mario-text-image-7" src="{{ asset('images/s8.jpeg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <a id="mario-text-7" class="text-lg leading-7 text-justify hidden pt-20 px-15">
+    <strong>Super Mario Odyssey. Story </strong>
+   <br><br>
+   Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on a massive, globe-trotting 3D adventure. Use amazing new abilities—like the power to capture and control objects, animals, 
+   and enemies—to collect Power Moons so you can power up the Odyssey airship and save Princess Peach from Bowser’s wedding plans!   
+</a>
+</div>
+
+<div class="flex items-center justify-center">
+  <img id="mario-text-image-8" src="{{ asset('images/s9.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <a id="mario-text-8" class="text-lg leading-7 text-justify hidden pt-20 px-15">
+    <strong>Super Mario 3D World + Bowser`s Fury. Story </strong>
+   <br><br>
+   In Super Mario 3D World, pounce and climb through dozens of colorful courses! Mario (and his friends) can use a variety of power-ups like the Super Bell, which grants catlike abilities like climbing and scratching.
+   Team up with up to three other players locally* or online** to reach the goal and see who can get a high score.
+   <br><br>
+  In Bowser’s Fury, Mario arrives on Lake Lapcat and is confronted with a rampaging Bowser! Join forces with Bowser Jr.
+   and venture through an interconnected world made of cat-themed...well, everything. Enemies, flowers, and even birds take on a feline form. Pass a Joy-Con ™️ controller to a friend as they take control of Bowser Jr. in 2-player mode.
   
-  
-  
+  </a>
+</div>
+
+
+<div class="background-container">
+  <img class="foreground-image" src="{{ asset('images/mario2.png') }}" alt="">
+</div>
+
+
+
+ 
 @endsection
