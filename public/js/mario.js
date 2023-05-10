@@ -75,7 +75,7 @@ function toggleDisplay(imageId, textImageId, textId) {
   });
 }
 
-// Call the function with the IDs of each element
+
 for (var i = 1; i <= 9; i++) {
   var imageId = "mario-image-" + i;
   var textImageId = "mario-text-image-" + i;
@@ -88,21 +88,3 @@ for (var i = 1; i <= 9; i++) {
 
 
 
-const images1 = document.querySelectorAll('.animate');
-
-function animateImages() {
-  images1.forEach(img => {
-    const imgPosition = img.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.3;
-
-    if (imgPosition < screenPosition) {
-      img.classList.add('animate__animated', 'animate__slideInLeft');
-    } else {
-      img.classList.remove('animate__animated', 'animate__slideInLeft');
-    }
-  });
-}
-
-animateImages();
-
-window.addEventListener('scroll', animateImages);

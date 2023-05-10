@@ -4,16 +4,20 @@
 
   
 <div class="grid grid-cols-2 gap-4 pt-20">
-    <div class="flex items-center justify-center">
-        <img src="{{ asset('images/mariobros.jpg') }}" alt="Mario Bros.">
-    </div>
-    <div class="flex flex-col justify-center">
-        <h2 class="text-4xl font-bold mb-4">Official Home of Mario</h2>
-        <p class="text-lg leading-7">
-            Mario If you’re a Mario fan—or even if you’ve just found out about him today you’ve come to the right place! Learn everything there is to know about that multitalented, mustached marvel, and check out the latest news, videos, and more.
-        </p>
-        
-    </div>
+
+  <div class="flex items-center justify-center pt-4">
+    <img class="w-3/4 mx-auto" src="{{ asset('images/25!.png') }}" alt="Mario Bros.">
+</div>
+<div class="flex flex-col justify-center">
+  <h2 class="text-4xl font-bold mb-4">Official Home of Mario</h2>
+  <p class="text-lg leading-7">
+      Mario If you’re a Mario fan—or even if you’ve just found out about him today you’ve come to the right place! Learn everything there is to know about that multitalented, mustached marvel, and check out the latest news, videos, and more.
+  </p>
+  <img class="w-1/4 mx-auto animate-fade-in-out" src="{{ asset('images/3.png') }}" alt="Mario Bros.">
+  <img class="w-1/2 mx-auto animate-fade-in-out" src="{{ asset('images/wall1.png') }}" alt="Mario Bros.">
+</div>
+
+
 </div>
 <div class="flex justify-end">
     <div class="scroll-image-wrapper">

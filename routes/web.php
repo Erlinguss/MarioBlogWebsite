@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\CharactersController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,13 +19,15 @@ use App\Http\Controllers\PostsController;
 
 
 
+
+
 Route::get('/', [PagesController::class, 'index']);
 Route::resource('/blog', PostsController::class);
 
-Route::get('/characters', [App\Http\Controllers\CharactersController::class, 'index'])->name('characters');
+Route::get('/characters', [CharactersController::class, 'index'])->name('characters');
 
 Auth::routes();
 
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 

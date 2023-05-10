@@ -250,4 +250,19 @@
 }
 
 
+/* ========ANIMATE FADE IN OUT IMAGE ========== */
+@keyframes fade-in-out {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
+.animate-fade-in-out {
+  animation: fade-in-out 3s infinite;
+}
