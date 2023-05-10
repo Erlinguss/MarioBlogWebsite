@@ -15,11 +15,15 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::get('/', [PagesController::class, 'index']);
 
+
+Route::get('/', [PagesController::class, 'index']);
 Route::resource('/blog', PostsController::class);
+
+Route::get('/characters', [App\Http\Controllers\CharactersController::class, 'index'])->name('characters');
 
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 

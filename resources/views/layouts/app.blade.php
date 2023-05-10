@@ -49,16 +49,14 @@
                   <nav class="flex mt-6">
                       <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/"><strong>Home </strong></a>
                       <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/blog"> <strong>Blog </strong></a>
-                  
-                    </nav>
-              </div>
-          </header>
+                      <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="{{ route('characters') }}"> <strong>Characters </strong></a>   </header>
         
 
         <div class="container mx-auto px-0 py-8 mt-24">
           @yield('content')
       </div>
 
+      
         <div >
             @include('layouts.footer')
         </div>

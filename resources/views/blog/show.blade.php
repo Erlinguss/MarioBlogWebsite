@@ -25,6 +25,5 @@
 </p>
 </div>
 
-<img src="{{ asset('images/friends.png') }}" alt="" class="w-4/5 m-auto " >
-
+<img src="{{ asset('images/friends.png') }}" alt="" class="mx-auto w-1/2 sm:w-1/2 lg:w-1/2">
 @endsection 

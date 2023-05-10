@@ -63,6 +63,9 @@
                 Keep Reading
             </a>
 
+           
+            <img src="{{ asset('images/25!.png') }}" alt="" class="mx-auto w-1/2 sm:w-1/2 lg:w-1/3">
+
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
                 <span class="float-right">
                     <a 
