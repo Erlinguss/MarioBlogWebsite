@@ -90,7 +90,7 @@
 
 
 <div class="flex items-center justify-center">
-  <img id="mario-text-image-9" src="{{ asset('images/s1.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <img id="mario-text-image-9" src="{{ asset('images/s20.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
   <a id="mario-text-9" class="text-lg leading-7 text-justify hidden pt-20 px-15">
     <strong>Super Mario bros. Story </strong>
    <br><br>
@@ -108,7 +108,7 @@
 
 
 <div class="flex items-center justify-center">
-  <img id="mario-text-image-1" src="{{ asset('images/s2.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <img id="mario-text-image-1" src="{{ asset('images/s21.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
   <a id="mario-text-1" class="text-lg leading-7 text-justify hidden pt-20 px-15">
     <strong>Super Mario World. Story </strong>
    <br><br>
@@ -126,7 +126,7 @@
 
 
 <div class="flex items-center justify-center">
-  <img id="mario-text-image-2" src="{{ asset('images/s3.jpeg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <img id="mario-text-image-2" src="{{ asset('images/s22.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
   <a id="mario-text-2" class="text-lg leading-7 text-justify hidden pt-20 px-15">
     <strong>Super Mario 64. Story </strong>
    <br><br>
@@ -162,7 +162,7 @@
 
 
 <div class="flex items-center justify-center">
-  <img id="mario-text-image-4" src="{{ asset('images/s5.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
+  <img id="mario-text-image-4" src="{{ asset('images/s23.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
   <a id="mario-text-4" class="text-lg leading-7 text-justify hidden pt-20 px-15">
     <strong>New Super Mario Bros. Story </strong>
    <br><br>
