@@ -62,96 +62,7 @@ function toggleImg() {
 window.addEventListener("scroll", toggleImg);
 
 
-// // ===============SHOW AND HIDE IMAGE AND TEXT WHEN CLICK=================
-
-
-// var marioImage = document.getElementById("mario-image");
-// var marioTextImage = document.getElementById("mario-text-image");
-// var marioText = document.getElementById("mario-text");
-
-// marioImage.addEventListener("click", function() {
-//   marioTextImage.style.display = marioTextImage.style.display === "none" ? "block" : "none";
-//   marioText.style.display = marioText.style.display === "none" ? "block" : "none";
-// });
-
-
-// var marioImage1 = document.getElementById("mario-image-1");
-// var marioTextImage1 = document.getElementById("mario-text-image-1");
-// var marioText1 = document.getElementById("mario-text-1");
-
-// marioImage1.addEventListener("click", function() {
-//   marioTextImage1.style.display = marioTextImage1.style.display === "none" ? "block" : "none";
-//   marioText1.style.display = marioText1.style.display === "none" ? "block" : "none";
-// });
-
-
-// var marioImage2 = document.getElementById("mario-image-2");
-// var marioTextImage2 = document.getElementById("mario-text-image-2");
-// var marioText2 = document.getElementById("mario-text-2");
-
-// marioImage2.addEventListener("click", function() {
-//   marioTextImage2.style.display = marioTextImage2.style.display === "none" ? "block" : "none";
-//   marioText2.style.display = marioText2.style.display === "none" ? "block" : "none";
-// });
-
-
-// var marioImage3 = document.getElementById("mario-image-3");
-// var marioTextImage3 = document.getElementById("mario-text-image-3");
-// var marioText3 = document.getElementById("mario-text-3");
-
-// marioImage3.addEventListener("click", function() {
-//   marioTextImage3.style.display = marioTextImage3.style.display === "none" ? "block" : "none";
-//   marioText3.style.display = marioText3.style.display === "none" ? "block" : "none";
-// });
-
-
-// var marioImage4 = document.getElementById("mario-image-4");
-// var marioTextImage4 = document.getElementById("mario-text-image-4");
-// var marioText4 = document.getElementById("mario-text-4");
-
-// marioImage4.addEventListener("click", function() {
-//   marioTextImage4.style.display = marioTextImage4.style.display === "none" ? "block" : "none";
-//   marioText4.style.display = marioText4.style.display === "none" ? "block" : "none";
-// });
-
-
-// var marioImage5 = document.getElementById("mario-image-5");
-// var marioTextImage5 = document.getElementById("mario-text-image-5");
-// var marioText5 = document.getElementById("mario-text-5");
-
-// marioImage5.addEventListener("click", function() {
-//   marioTextImage5.style.display = marioTextImage5.style.display === "none" ? "block" : "none";
-//   marioText5.style.display = marioText5.style.display === "none" ? "block" : "none";
-// });
-
-
-// var marioImage6 = document.getElementById("mario-image-6");
-// var marioTextImage6 = document.getElementById("mario-text-image-6");
-// var marioText6 = document.getElementById("mario-text-6");
-
-// marioImage6.addEventListener("click", function() {
-//   marioTextImage6.style.display = marioTextImage6.style.display === "none" ? "block" : "none";
-//   marioText6.style.display = marioText6.style.display === "none" ? "block" : "none";
-// });
-
-// var marioImage7 = document.getElementById("mario-image-7");
-// var marioTextImage7 = document.getElementById("mario-text-image-7");
-// var marioText7 = document.getElementById("mario-text-7");
-
-// marioImage7.addEventListener("click", function() {
-//   marioTextImage7.style.display = marioTextImage7.style.display === "none" ? "block" : "none";
-//   marioText7.style.display = marioText7.style.display === "none" ? "block" : "none";
-// });
-
-// var marioImage8 = document.getElementById("mario-image-8");
-// var marioTextImage8 = document.getElementById("mario-text-image-8");
-// var marioText8 = document.getElementById("mario-text-8");
-
-// marioImage8.addEventListener("click", function() {
-//   marioTextImage8.style.display = marioTextImage8.style.display === "none" ? "block" : "none";
-//   marioText8.style.display = marioText8.style.display === "none" ? "block" : "none";
-// });
-
+// ===============SHOW AND HIDE IMAGE AND TEXT WHEN CLICK=================
 
 function toggleDisplay(imageId, textImageId, textId) {
   var image = document.getElementById(imageId);
@@ -171,3 +82,27 @@ for (var i = 1; i <= 9; i++) {
   var textId = "mario-text-" + i;
   toggleDisplay(imageId, textImageId, textId);
 }
+
+
+
+
+
+
+const images1 = document.querySelectorAll('.animate');
+
+function animateImages() {
+  images1.forEach(img => {
+    const imgPosition = img.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3;
+
+    if (imgPosition < screenPosition) {
+      img.classList.add('animate__animated', 'animate__slideInLeft');
+    } else {
+      img.classList.remove('animate__animated', 'animate__slideInLeft');
+    }
+  });
+}
+
+animateImages();
+
+window.addEventListener('scroll', animateImages);

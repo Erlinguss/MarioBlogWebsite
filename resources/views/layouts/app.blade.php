@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -16,6 +16,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ ('css/mario.css') }}" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> --}}
 </head>
 <body class="bg-white-100 h-screen antialiased leading-none font-sans">
     <div id="app">
@@ -48,7 +49,7 @@
                   <nav class="flex mt-6">
                       <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/"><strong>Home </strong></a>
                       <a class="no-underline text-white hover:underline transition duration-300 ease-in-out transform hover:-translate-y-1 mx-4" href="/blog"> <strong>Blog </strong></a>
-                     
+                  
                     </nav>
               </div>
           </header>
@@ -62,6 +63,7 @@
             @include('layouts.footer')
         </div>
     </div>
+   
 </body >
 </html>
 

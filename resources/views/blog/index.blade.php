@@ -1,13 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="w-4/5 m-auto text-center">
     <div class="py-15 border-b border-gray-200">
         <h1 class="text-6xl">
-            Blog Posts
+            Mario Blog Posts
         </h1>
     </div>
 </div>
+
 
 @if (session()->has('message'))
     <div class="w-4/5 m-auto mt-10 pl-2">
@@ -28,22 +30,34 @@
 @endif
 
 @foreach ($posts as $post)
-    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+        <div class="sm:grid gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+           
         <div>
-            <img src="{{ asset('images/' . $post->image_path) }}" alt="">
-        </div>
-        <div>
-            <h2 class="text-gray-700 font-bold text-5xl pb-4">
-                {{ $post->title }}
-            </h2>
+            <img src="{{ asset('images/backgroundMario4.png') }}" alt="" >
+            <div class="text-center">
+                <h2 class="text-gray-700 font-bold text-5xl pb-4">
+                    {{ $post->title }}
+                </h2>
+            </div>
+            <img src="{{ asset('images/backgroundMario10.png') }}" alt="" >
+
+            <div>
+                <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+            </div>
 
             <span class="text-gray-500">
                 By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
             </span>
 
-            <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-                {{ $post->description }}
-            </p>
+        
+
+            <div class="post-content">
+                <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light text-justify">
+                    {{ $post->description }}
+                </p>
+                
+            </div>
+
 
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                 Keep Reading
