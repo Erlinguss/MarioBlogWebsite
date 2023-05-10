@@ -1,6 +1,6 @@
 
 
-/* ========= IMAGES SLICES =========== */
+/* ============= IMAGES SLICES ============= */
 .wrapper {
   display: flex;
   align-items: center;
@@ -84,7 +84,18 @@
   }
 
 
-  /* =============PREVIOUS BUTTON ============ */
+/* ==============SECOND HEADER =============== */
+.second-header {
+  background-image: url('../images/mario5.jpg');
+  background-size: cover;
+  background-position: center;
+  top: 60px;
+  z-index: 40;
+}
+
+
+
+ /* =============PREVIOUS BUTTON ============ */
   .navBtn {
     background-color: #dd3608;
     border: none;
@@ -181,14 +192,14 @@
 } */
 
 
-/* ===============SCROLL IMAGE SHOW & HIDE =============== */
+/* =============SCROLL IMAGE SHOW & HIDE ============= */
 
 .scroll-image-wrapper {
   display: none;
   max-width: 150px;
   bottom: 20px;
   right: 200px;
-  z-index: 9999;
+  z-index: 10;
   transition: all 0.3s ease-in-out;
 }
 
@@ -206,8 +217,9 @@
 
 
 
+/* ===============MARIO TEXT IMAGE =============== */
 
-#mario-text-image, #mario-text-image-1 ,
+#mario-text-image-9, #mario-text-image-1 ,
 #mario-text-image-2, #mario-text-image-3,
 #mario-text-image-4, #mario-text-image-5,
 #mario-text-image-6, #mario-text-image-7,
@@ -226,6 +238,7 @@
   width: 100%;
   height: 100vh;
 }
+
 .foreground-image {
   position: absolute;
   top: 50%;
