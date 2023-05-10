@@ -24,13 +24,13 @@
     Read More
   </a>
 
-    <div class="relative">
-        <img class="" src="{{ asset('images/backgroundMario3.png') }}" alt="">
-        <figcaption class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  pt-20">
-            The history of Super Mario
-        </figcaption>
-        <img class="" src="{{ asset('images/backgroundMario2.png') }}" alt="">
-    </div>
+  <div class="relative">
+    <img class="" src="{{ asset('images/backgroundMario3.png') }}" alt="">
+    <figcaption class="absolute inset-0 flex items-center justify-center text-white md:text-4xl font-bold  pt-20">
+        The history of Super Mario
+    </figcaption>
+    <img class="" src="{{ asset('images/backgroundMario2.png') }}" alt="">
+</div>
 
 
 
