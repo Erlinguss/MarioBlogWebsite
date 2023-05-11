@@ -6,7 +6,7 @@
 <div class="grid grid-cols-2 gap-4 pt-20">
 
   <div class="flex items-center justify-center pt-4">
-    <img class="w-3/4 mx-auto" src="{{ asset('images/25!.png') }}" alt="Mario Bros.">
+    <img class="w-3/4 mx-auto" src="{{ asset('images/mariostart.png') }}" alt="Mario Bros.">
 </div>
 <div class="flex flex-col justify-center">
   <h2 class="text-4xl font-bold mb-4">Official Home of Mario</h2>
