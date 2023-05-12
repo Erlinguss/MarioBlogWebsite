@@ -3,6 +3,9 @@
 This project involves building a website using the Laravel framework, implementing the Model-View-Controller (MVC) architecture. The theme for this website is on the history of Mario Bros. The website will contain a blog section with at least five articles.
 
 
+![Php, Html, Sql](https://github.com/abielinsky/ServerSideCA/blob/main/Pictures/mariosss.jpg?raw=true)
+
+
 ## <a href="#" class="button big">Requirements</a> [![Button 1](https://img.shields.io/badge/%22Requirements%22-red.svg)](https://example.com/button1 "Tooltip Text")
 
 •	PHP 7.3 or higher <br>
