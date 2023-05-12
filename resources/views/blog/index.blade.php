@@ -35,7 +35,7 @@
         <div>
             <img src="{{ asset('images/backgroundMario4.png') }}" alt="" >
             <div class="text-center">
-                <h2 class="text-gray-700 font-bold text-5xl pb-4">
+                <h2 class="text-lg leading-9 text-4xl pb-4">
                     {{ $post->title }}
                 </h2>
             </div>
