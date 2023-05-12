@@ -86,5 +86,25 @@ for (var i = 1; i <= 9; i++) {
 
 
 
+// ===========MODAL TEXT WHEN CLICK IN CHARACTER CLASS=================
+var characters = document.querySelectorAll('.character');
+var modal = document.getElementById('modal');
+var modalContent = document.getElementById('modal-content');
+var modalText = document.getElementById('modal-text');
 
+characters.forEach(function(character) {
+  var image = character.querySelector('img');
+  var description = character.querySelector('.description');
+
+  image.addEventListener('click', function() {
+    modal.style.display = 'block';
+    modalText.innerHTML = description.innerHTML;
+  });
+});
+
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
 
