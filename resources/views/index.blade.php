@@ -110,7 +110,6 @@
   </a>
 </div>
 
-
 <div class="flex items-center justify-center">
   <img id="mario-text-image-1" src="{{ asset('images/s21.jpg') }}" class="w-1/3 h-auto   mt-15 hidden ">
   <a id="mario-text-1" class="text-lg leading-7 text-justify hidden pt-20 px-15">
