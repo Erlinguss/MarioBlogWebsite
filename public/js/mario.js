@@ -84,27 +84,29 @@ for (var i = 1; i <= 9; i++) {
 }
 
 
-
-
 // ===========MODAL TEXT WHEN CLICK IN CHARACTER CLASS=================
-var characters = document.querySelectorAll('.character');
-var modal = document.getElementById('modal');
-var modalContent = document.getElementById('modal-content');
-var modalText = document.getElementById('modal-text');
+function openModal(modalId, modalContentId) {
+  var modal = document.querySelector(modalId);
+  var modalContent = document.querySelector(modalContentId);
+  var modalText = modalContent.querySelector('p');
+  modal.style.display = "block";
+  modalContent.classList.add("modal-animate-in");
+  modalText.innerHTML = modalContent.innerHTML;
+}
 
 characters.forEach(function(character) {
-  var image = character.querySelector('img');
+  var im = character.querySelector('img');
   var description = character.querySelector('.description');
+  var modalId = im.getAttribute('data-modal');
+  var modalContentId = modalId + '-content';
 
-  image.addEventListener('click', function() {
-    modal.style.display = 'block';
-    modalText.innerHTML = description.innerHTML;
+  im.addEventListener('click', function() {
+    openModal(modalId, '#' + modalContentId);
   });
 });
 
 window.addEventListener('click', function(event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = 'none';
   }
 });
-

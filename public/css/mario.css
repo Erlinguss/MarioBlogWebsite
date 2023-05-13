@@ -93,8 +93,6 @@
   z-index: 40;
 }
 
-
-
  /* =============PREVIOUS BUTTON ============ */
   .navBtn {
     background-color: #dd3608;
@@ -162,8 +160,6 @@
     background-color: #0511b8;
   }
 
-
-
 /* ===============COIN ANIMATION =============== */
  
   .coin {
@@ -174,22 +170,6 @@
     0% { transform: translateY(0); }
     100% { transform: translateY(-50px); }
 } 
-
-/* .coin {
-  animation-name: spin;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 
 /* =============SCROLL IMAGE SHOW & HIDE ============= */
@@ -274,13 +254,15 @@
 .character {
   position: relative;
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
+  padding-bottom: 25px;
   cursor: pointer;
+  text-align: center;
+
 }
 
-
 .character img {
-  width: 100%;
+  width: 90%;
   height: 550px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -291,7 +273,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin: 0;
   font-size: 1.5rem;
@@ -311,7 +293,6 @@
   opacity: 1;
 }
 
-
 .modal {
   display: none;
   position: fixed;
@@ -321,42 +302,32 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  background-color: white;
-  margin: 10% auto;
+  background-color: #fefefe;
+  margin: 15% auto;
   padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  max-height: 80%;
-  overflow: auto;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-  font-size: 2rem;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
-  color: white;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.close:hover {
-  color: red;
-}
 
-.modal p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
 
 @media only screen and (min-width: 768px) {
   
