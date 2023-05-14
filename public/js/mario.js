@@ -25,28 +25,6 @@ nextBtn.addEventListener('click', () => {
 
 
 
-//   // set the initial position of the second header
-// var secondHeader = document.querySelector(".second-header");
-// secondHeader.classList.add("absolute");
-
-// // wait for the page to load
-// window.addEventListener("load", function() {
-//   // remove the absolute positioning
-//   secondHeader.classList.remove("absolute");
-
-//   // scroll event listener
-//   window.addEventListener("scroll", function() {
-//     var scrollPosition = window.pageYOffset;
-
-//     if (scrollPosition > 0) {
-//       secondHeader.classList.add("fixed");
-//     } else {
-//       secondHeader.classList.remove("fixed");
-//     }
-//   });
-// });
-
-
 // ===============FUNCTION TO SHOW AN IMAGE WHEN SCROLL DOWN ===============
 
 function toggleImg() {
@@ -60,6 +38,8 @@ function toggleImg() {
 }
 
 window.addEventListener("scroll", toggleImg);
+
+
 
 
 // ===============SHOW AND HIDE IMAGE AND TEXT WHEN CLICK=================
@@ -84,29 +64,3 @@ for (var i = 1; i <= 9; i++) {
 }
 
 
-// ===========MODAL TEXT WHEN CLICK IN CHARACTER CLASS=================
-function openModal(modalId, modalContentId) {
-  var modal = document.querySelector(modalId);
-  var modalContent = document.querySelector(modalContentId);
-  var modalText = modalContent.querySelector('p');
-  modal.style.display = "block";
-  modalContent.classList.add("modal-animate-in");
-  modalText.innerHTML = modalContent.innerHTML;
-}
-
-characters.forEach(function(character) {
-  var im = character.querySelector('img');
-  var description = character.querySelector('.description');
-  var modalId = im.getAttribute('data-modal');
-  var modalContentId = modalId + '-content';
-
-  im.addEventListener('click', function() {
-    openModal(modalId, '#' + modalContentId);
-  });
-});
-
-window.addEventListener('click', function(event) {
-  if (event.target.classList.contains('modal')) {
-    event.target.style.display = 'none';
-  }
-});
