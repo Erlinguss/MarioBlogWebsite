@@ -1,11 +1,11 @@
 
-// =========FUNCTION TO MOVE IMAGES FROM -X TO X OR VICEVERSE ==========
+// ============FUNCTION TO MOVE IMAGES FROM -X TO X OR VICEVERSE ===========
 
 const images = document.querySelector('.images');
-const prevBtn = document.querySelector('#prev-btn'); 
+const prevBtn = document.querySelector('#prev-btn');
 const nextBtn = document.querySelector('#next-btn');
 const imageWidth = images.children[0].clientWidth;
-let currentIndex = 0; 
+let currentIndex = 0;
 
 function moveToIndex(index) {
   images.style.transform = `translateX(-${index * imageWidth}px)`;
@@ -21,7 +21,6 @@ nextBtn.addEventListener('click', () => {
   const index = (currentIndex + 3) % images.children.length;
   moveToIndex(index);
 });
-
 
 
 
@@ -41,15 +40,14 @@ window.addEventListener("scroll", toggleImg);
 
 
 
-
 // ===============SHOW AND HIDE IMAGE AND TEXT WHEN CLICK=================
 
 function toggleDisplay(imageId, textImageId, textId) {
   var image = document.getElementById(imageId);
   var textImage = document.getElementById(textImageId);
   var text = document.getElementById(textId);
-  
-  image.addEventListener("click", function() {
+
+  image.addEventListener("click", function () {
     textImage.style.display = textImage.style.display === "none" ? "block" : "none";
     text.style.display = text.style.display === "none" ? "block" : "none";
   });
