@@ -192,7 +192,7 @@
 }
 
 .scroll-image-wrapper.show img {
-  width: 200px;
+  width: 350px;
 }
 
 
@@ -246,6 +246,11 @@
 .animate-fade-in-out {
   animation: fade-in-out 3s infinite;
 }
+
+.animate-fade-in-out1 {
+  animation: fade-in-out 4s infinite;
+}
+
 
 
 /* ===========MODAL TEXT CHARACTERS========== */
@@ -310,7 +315,9 @@
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-image: url('../images/wall3.jpg');
+  background-position: right bottom;
+  background-size: 100%;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -329,13 +336,13 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin-top: 330px;
+  margin-top: 290px;
   margin-right:440px;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: green;
   text-decoration: none;
   cursor: pointer;
 }
@@ -353,9 +360,6 @@
     align-items: center;
     max-height: 90%;
   }
+ 
   
-  .modal p {
-    /* margin-left: 20px; */
-    text-align: justify;
-  }
 }
