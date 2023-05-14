@@ -41,7 +41,7 @@
     <div class="wrapper">
         <img class="tunnel" src="{{ asset('images/mariotunel.jpeg') }}" alt="">
         <button id="prev-btn" class="navBtn"><strong>&lt;</strong></button>
-        <div class="container">
+        <div class="containerI">
           <div class="images" style="display: flex; flex-direction: row;">
             
             <div class="image-container">
